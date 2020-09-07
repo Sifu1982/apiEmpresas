@@ -1,0 +1,75 @@
+### Departamentos ###
+GET http://localhost:3000/api/departamentos
+
+
+###
+POST http://localhost:3000/api/departamentos
+Content-Type: application/json
+
+{
+    "nombre": "Administración",
+    "ciudad": "Vigo"
+}
+
+###
+PUT http://localhost:3000/api/departamentos
+Content-Type: application/json
+
+{
+    "id": 9,
+    "nombre": "desarrollo",
+    "ciudad": "Vigo"
+}
+
+###
+DELETE  http://localhost:3000/api/departamentos
+Content-Type: application/json
+
+{
+    "id": 12
+}
+
+
+
+### Empleados ###
+
+GET http://localhost:3000/api/empleados
+
+
+###
+POST  http://localhost:3000/api/empleados
+Content-Type: application/json
+
+{
+    "nombre":"David",
+    "dni": "48500439V",
+    "sexo": "M",
+    "fecha_nac": "1985-05-24",
+    "salario": "1000",
+    "cargo":"Secretaria"
+}
+
+###
+PUT  http://localhost:3000/api/empleados
+Content-Type: application/json
+
+{
+    "id": 22,
+    "nombre":"Antonia",
+    "dni": "45678903",
+    "sexo": "F",
+    "fecha_nac": "1990-05-24",
+    "salario": "2000",
+    "cargo":"Adjunta de dirección"
+}
+
+###
+DELETE  http://localhost:3000/api/empleados
+Content-Type: application/json
+
+{
+    "id": 23
+}
+
+
+
